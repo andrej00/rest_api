@@ -81,7 +81,7 @@ module.exports = {
     });
   },
   passwordReset: (req, res) => {
-    sgMail.setApiKey('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');
+    sgMail.setApiKey('send grid api key here');
     const password = generatePassword();
     User.findOne({ email: req.body.email }, (err, user) => {
       if (err) {
